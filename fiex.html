@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            margin: 0 auto;
+            list-style: none;
+            width: 321px;
+            height: 318px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            background-color: #333;
+        }
+
+        li {
+            margin: 19px 19px;
+            width: 104px;
+            height: 104px;
+        }
+
+        ul>li:nth-child(1) {
+            background-color: yellow;
+            animation: a 4s steps(1) infinite;
+        }
+
+        ul>li:nth-child(2) {
+            background-color: blue;
+            animation: a 4s steps(1) 1s infinite;
+        }
+
+        ul>li:nth-child(3) {
+            background-color: red;
+            animation: a 4s steps(1) 2s infinite;
+        }
+
+        ul>li:nth-child(4) {
+            background-color: green;
+            animation: a 4s steps(1) 3s infinite;
+        }
+
+        @keyframes a {
+            0% {
+                order: 1
+            }
+
+            25% {
+                order: 2
+            }
+
+            50% {
+                order: 3
+            }
+
+            75% {
+                order: 4
+            }
+
+            100% {
+                order: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

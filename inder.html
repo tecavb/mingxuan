@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        header {
+            width: 6.4rem;
+            position: fixed;
+            top: 0;
+            height: 0.5rem;
+            line-height: 0.4rem;
+            background-color:#0dc441;
+            font-size: 0.14rem;
+            text-align: center;
+        }
+        header>a{
+            margin-top: 0.05rem;
+            color: #fff;
+            display: inline-block;
+            width: 1rem;
+            height: 0.4rem;
+            background-color: #e1e1e19a;
+        }
+        header>a:first-child{
+            border-radius: 0.2rem 0 0 0.2rem;
+        }
+        header>a:last-child{
+            border-radius: 0 0.2rem 0.2rem 0;
+        }
+        li{
+            font-size: 0.12rem;
+            height: 3.5rem;
+            margin-top: 0.1rem;
+            border:1px solid #e5e5e5;
+        }
+        li>img{
+            width: 3.1rem;
+        }
+        li>p{
+            text-align: center;
+            line-height: 0.35rem;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+        }
+        section{
+            margin-top: 1rem;
+            margin-bottom: 0.9rem;
+        }
+        nav{
+            background-color: #fff;
+            width: 6.4rem;
+            display: flex;
+            position: fixed;
+            top: 0.5rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            justify-content: space-around;
+            font-size: 0.14rem;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        nav a{
+            color: #333;
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav a:hover{
+            border-bottom: 3px solid #0dc441;
+            color: #0dc441;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            height: 0.8rem;
+            width: 6.4rem;
+            font-size: 0.14rem;
+            background-color: #fff;
+            color: #e1e1e1;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0.1rem;
+            box-sizing: border-box;
+        }
+        footer div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        footer div img{
+            height: 0.35rem;
+        }
+        footer div:nth-child(3)>img{
+            height: 0.8rem;
+            border-radius: 50%;
+            border: 2px solid #e1e1e1;
+            margin-bottom: 0.2rem;
+            background-color: #fff;
+        }
+    </style>
+    <script>
+        function refreshRem() {
+            var desW = 640,
+                winW = document.documentElement.clientWidth || document.body.clientWidth;
+            ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);</script>
+</head>
+
+<body>
+    <header><a href="javascript:;">热点</a><a href="jacascript:;">关注</a></header>
+    <nav><a href="javascript:;">足球现场</a><a href="javascript:;">足球生活</a><a href="javascript:;">足球美女</a></nav>
+    <section>
+        <ul>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+            <li>
+                <img src="images/1566471726121-8a6578d6-98f4-4ff0-94aa-8732e0c3339e.png" alt="">
+                <p>小丸子小丸子</p>
+            </li>
+        </ul>
+    </section>
+    <footer><div><a href="fiex.html"><img src="images/indent_line.svg" alt=""></a>首页</div><div><img src="images/fond_line.svg" alt="">发现</div><div><img src="images/camera.svg" alt=""></div><div><img src="images/user.svg" alt="">我的</div><div><img src="images/close_filled.svg" alt="">退出</div></footer>
+</body>
+</html>
