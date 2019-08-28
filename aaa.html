@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <a id="a">登录</a>
+    <a id="A">注册</a>
+    <div id="box"></div>
+    <script>
+        let name = ['aaa', 'bbb', 'ccc', 'ddd', 'eee', 'fff']
+        let nam = ['111', '222', '333', '444', '555', '666']
+        a.onclick = function () { //输出、验证
+            box.innerText = '';   
+            for (let i = 0;  i<name.length; i++) {               
+                if (name[i]==inp1.value&&nam[i] == inp2.value) { 
+                    a.href = "http://www.baidu.com"; break;}
+                    { box.innerText = "密码错误"; }
+            }
+        }
+        A.onclick = function () {//注册
+            name[name.length] = inp1.value;
+            nam[nam.length] = inp2.value;
+            console.log(name, nam)
+        }
+
+    </script>
+</body>
+
+</html>
